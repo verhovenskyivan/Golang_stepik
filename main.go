@@ -3,7 +3,47 @@ package main
 import "fmt"
 
 
-switch x := 2; x {
+
+
+/*
+
+day := 3
+
+switch day {
+    case 1:
+        fmt.Println("Понедельник")
+        fallthrough
+    case 2:
+        fmt.Println("Вторник")
+        fallthrough
+    case 3:
+        fmt.Println("Среда")
+        fallthrough
+    case 4:
+        fmt.Println("Четверг")
+        fallthrough
+    case 5:
+        fmt.Println("Пятница")
+    default:
+        fmt.Println("Неправильный день")
+}
+
+ выведет
+Среда
+Четверг
+Пятница
+
+
+
+switch mounth:= "jan" {
+  case mounth == "Dec":
+    fmt.Print("Zima")
+  case mounth == "Jun":
+    fmt.Print("Leto")
+}
+
+
+/*switch x := 2; x {
     case 1:
         fmt.Println("Один")
     case 2:
@@ -14,8 +54,7 @@ switch x := 2; x {
         fmt.Println(x)
 }
 
-
-
+*/
 /*
 pass = 7055
 if pass == 7055 { 
