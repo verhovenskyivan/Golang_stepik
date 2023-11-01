@@ -5,6 +5,39 @@ import "fmt"
 
 
 
+func main(){
+    var res int
+    fmt.Scan(&res)
+    sum := 1
+    for  i := 1; i <= res; i++ {
+    sum *= i
+    }
+}
+
+/*
+    fmt.Print(sum)
+    sum := 0
+    for i := 0; i <= 30; i += 5 {
+        sum += i
+    } 
+    fmt.Println(sum)
+
+{
+    var money int
+    fmt.Scan(&money)
+    switch  {
+        case money > 1000:
+        fmt.Print("Apple")
+        case 500 <= money && money <= 1000:
+        fmt.Print("Samsung")
+        case money < 500:
+        fmt.Print("Nokia с фонариком")
+    }
+for [инициализация счетчика]; [условие]; [изменение счетчика]{
+    // это так называемое тело цикла, 
+    // где находится код, который выполняется во время работы цикла
+}
+
 /*
 
 day := 3
