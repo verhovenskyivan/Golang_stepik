@@ -2,9 +2,59 @@ package main
 
 import "fmt"
 
+func main() {
+    helloStepik()
+}
 
+func helloStepik() {
+    fmt.Println("Hello stepik")
+}
+func plusminus(a, b int) (int, int){
+    return a + b , a - b
+}
+func concat(a, b string) string{
+    return a + b   
+   }
 
+Defer
+Оператор defer гарантирует, что функция будет вызвана только после того, как вернется окружающая функция.
 
+Например:
+
+package main
+
+import "fmt"
+
+func welcome() {
+    fmt.Println("Добро пожаловать")
+}
+
+func main() {
+    defer welcome()
+    fmt.Println("Привет!")
+}
+Приведенный выше код сначала выведет Привет! и только после этого выведет результат функции welcome().
+Это происходит потому, что вызов функции welcome() отложен, то есть она ждет, пока main() закончит выполнение, и только после этого происходит её вызов
+/*
+package main
+
+import "fmt"
+
+func square(num int) int {
+    return num * num
+}
+
+func main() {
+    res := square(4)
+    fmt.Println(res) // выведет: 16
+}
+func argFunc(a int, b int, c int){
+    какой-то код
+}
+
+или так, если все они одного типа:
+func argFunc(a, b, c int){
+    как
 func main(){
     var res int
     fmt.Scan(&res)
